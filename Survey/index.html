@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg">
+    <div class="bg-tint">
+    <h1 id="title">Pathfinder</h1>
+    <p id="description">Creating Global Minds</p>
+    <form id="survey-form">
+      <fieldset>
+        <label palceholder="Enter your name" id="name-label">Name <input class="name" id="name" type="text" required placeholder="Enter your name"/></label>
+        <br>
+        <label id="email-label">Email <input class="email" id="email" type="email" required placeholder="Enter your Email" /></label>
+        <br>
+        <label id="number-label">Class <input id="number" type="number" min="1" max="10" placeholder="Class" /></label>
+        <br>
+        <label>Which Payment Option you have taken?
+          <br>
+          <select id="dropdown">
+            <option value="">Choose</option>
+            <option value="1">Monthly</option>
+            <option value="2">Quaterly</option>
+            <option value="3">Half-yearly</option>
+            <option value="4">One-time</option>
+          </select>
+          </br>
+        </label>
+        <br>
+        <label>Do you want to know your offer?</label>
+        <label class="radio-label-yes"><input class="radio" name="offer" value="yes" type="radio" /> Yes</label>
+        <label class="radio-label-no"><input class="radio" name="offer" value="no" type="radio" /> No </label>
+        <br>
+        <label class="reference-label">How did you get to know about us ?</label>
+        <label><input class="reference" value="1" type="checkbox" /> Freinds/Relatives</label>
+        <label><input class="reference" value="2" type="checkbox" /> Pamplet/Broschure</label>
+        <label><input class="reference" value="3" type="checkbox" /> Banners</label>
+
+        <label class="suggestion-label">Any feedback:
+         <textarea class="suggestion" name="add." placeholder="Enter your feedback here.." ></textarea>
+        </label>
+        <br>
+        <label>
+          <input id="submit" type="submit"/>
+        </label>
+        </div>
+        </div>
+  </body>
+</html>
